@@ -11,7 +11,7 @@ import {
 export default function Skill() {
   return (
     <Fragment>
-      <div className="mx-5 my-20 md:w-[75%] md:mx-auto">
+      <div className="mx-5 my-20 md:w-[75%] md:mx-auto" id="skills">
         <Tabs defaultValue="coding" className="flex flex-col">
           <TabsList className="mb-2">
             <TabsTrigger value="coding">Coding Skills</TabsTrigger>
@@ -21,7 +21,7 @@ export default function Skill() {
             value="coding"
             className="grid grid-cols-1 md:grid-cols-3 gap-5"
           >
-            <Card>
+            <Card className="text-justify">
               <CardHeader>
                 <CardTitle>Frontend Development</CardTitle>
                 <CardDescription>
@@ -70,7 +70,7 @@ export default function Skill() {
             value="soft"
             className="grid grid-cols-1 md:grid-cols-3 gap-5"
           >
-            <Card>
+            <Card className="text-justify">
               <CardHeader>
                 <CardTitle>Communication</CardTitle>
               </CardHeader>

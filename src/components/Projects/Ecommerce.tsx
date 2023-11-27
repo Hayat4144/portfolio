@@ -14,7 +14,7 @@ import { EcommerceImage } from "@/lib/constant";
 
 export default function Ecommerce() {
   return (
-    <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5 text-justify">
       <Card>
         <CardHeader>
           <CardTitle>Ecommerce</CardTitle>

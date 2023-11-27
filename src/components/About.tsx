@@ -1,20 +1,23 @@
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function About() {
   return (
     <section
-      className="about mx-5 mb-10 md:grid md:mx-10 md:grid-cols-2
-         md:place-items-center"
+      className="about mx-5 mb-10 md:grid md md:grid-cols-2
+         md:place-items-center md:mx-auto md:w-[75%]"
+      id="about"
     >
       <div className="w-full">
         <AspectRatio ratio={16 / 13}>
           <Image src="/images.png" alt="Photo" fill className="" />
         </AspectRatio>
       </div>
-      <div>
+      <div className="text-justify">
         <p className="leading-7">
           Hello! I'm Hayat ilyas, a tech enthusiast skilled in building cool
           websites. I'm great at making things look awesome on the screen using
@@ -34,8 +37,16 @@ export default function About() {
           together!
         </p>
         <div className="my-5 space-x-5">
-          <Button>Download Resume</Button>
-          <Button>Contact me</Button>
+          <Link
+            href={"resume.pdf"}
+            target="_blank"
+            className={`${cn(buttonVariants({ variant: "default" }))}`}
+            rel="noopener noreferrer"
+            locale={false}
+            download
+          >
+            Download Resume
+          </Link>
         </div>
       </div>
     </section>

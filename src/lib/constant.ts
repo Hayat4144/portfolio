@@ -3,6 +3,75 @@ export interface imageObject {
   url: string;
 }
 
+export const ChitChatImage: imageObject[] = [
+  {
+    id: "1",
+    url: "/chit/01.jpeg",
+  },
+  {
+    id: "2",
+    url: "/chit/02.jpeg",
+  },
+  {
+    id: "3",
+    url: "/chit/03.jpeg",
+  },
+
+  {
+    id: "4",
+    url: "/chit/04.jpeg",
+  },
+  {
+    id: "5",
+    url: "/chit/05.jpeg",
+  },
+];
+
+export const DashboardImage: imageObject[] = [
+  {
+    id: "1",
+    url: "/dashboard/Screenshot2.png",
+  },
+  {
+    id: "2",
+    url: "/dashboard/Screenshot3.png",
+  },
+  {
+    id: "3",
+    url: "/dashboard/Screenshot4.png",
+  },
+
+  {
+    id: "4",
+    url: "/dashboard/Screenshot10.png",
+  },
+  {
+    id: "5",
+    url: "/dashboard/Screenshot16.png",
+  },
+  {
+    id: "6",
+    url: "/dashboard/Screenshot8.png",
+  },
+
+  {
+    id: "7",
+    url: "/dashboard/Screenshot18.png",
+  },
+  {
+    id: "8",
+    url: "/dashboard/Screenshot19.png",
+  },
+  {
+    id: "9",
+    url: "/dashboard/Screenshot12.png",
+  },
+  {
+    id: "10",
+    url: "/dashboard/Screenshot11.png",
+  },
+];
+
 export const EcommerceImage: imageObject[] = [
   {
     id: "1",

@@ -10,12 +10,12 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Slider from "../Slider";
-import { noteverseImage } from "@/lib/constant";
+import { DashboardImage } from "@/lib/constant";
 
 export default function ProjectDashboard() {
   return (
-    <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
-      <Slider images={noteverseImage} />
+    <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5 my-10 text-justify">
+      <Slider images={DashboardImage} />
       <Card>
         <CardHeader>
           <CardTitle>Ecommerce Dashboard</CardTitle>

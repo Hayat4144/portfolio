@@ -14,10 +14,14 @@ import Slider from "../Slider";
 import { noteverseImage } from "@/lib/constant";
 import ProjectDashboard from "./ProjectDashboard";
 import Ecommerce from "./Ecommerce";
+import ChitChat from "./ChitChat";
 
 export default function Projects() {
   return (
-    <div className="mx-5 my-20 md:w-[75%] md:mx-auto">
+    <div
+      className="mx-5 min-h-screen md:w-[75%] md:mx-auto text-justify"
+      id="projects"
+    >
       <TypographyH3>Some Things I've built</TypographyH3>
       <div className="projects my-10">
         <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -69,6 +73,7 @@ export default function Projects() {
         </div>
         <ProjectDashboard />
         <Ecommerce />
+        <ChitChat />
       </div>
     </div>
   );
