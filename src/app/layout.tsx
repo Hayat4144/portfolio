@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import { fontSans } from "@/components/Fonts";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/Nav/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,11 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
+        className={cn("bg-background font-sans antialiased", fontSans.variable)}
       >
+        <Navbar />
         {children}
       </body>
     </html>
