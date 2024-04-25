@@ -25,7 +25,8 @@ export default function Skill() {
               <CardHeader>
                 <CardTitle>Frontend Development</CardTitle>
                 <CardDescription>
-                  React js | JavaScript | Next js | Tailwind
+                  React js | JavaScript | Next js | Tailwind | TypeScript |
+                  Redux | Radix UI | Shadcn UI
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -39,7 +40,7 @@ export default function Skill() {
               <CardHeader>
                 <CardTitle>Backend Development</CardTitle>
                 <CardDescription>
-                  Node js | Express js | Mongodb | Sql
+                  Node js | Express js | Mongodb | Postgres
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -54,7 +55,8 @@ export default function Skill() {
               <CardHeader>
                 <CardTitle>Api Development</CardTitle>
                 <CardDescription>
-                  REST | Pagination | Authutentication
+                  REST API | Pagination | Searching | Filter | Authutentication
+                  | Authorization
                 </CardDescription>
               </CardHeader>
               <CardContent>

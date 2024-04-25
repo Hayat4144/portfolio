@@ -15,6 +15,7 @@ import { noteverseImage } from "@/lib/constant";
 import ProjectDashboard from "./ProjectDashboard";
 import Ecommerce from "./Ecommerce";
 import ChitChat from "./ChitChat";
+import WritedailyProject from "./Writedaily";
 
 export default function Projects() {
   return (
@@ -24,6 +25,7 @@ export default function Projects() {
     >
       <TypographyH3>Some Things I've built</TypographyH3>
       <div className="projects my-10">
+        <WritedailyProject />
         <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5">
           <Card>
             <CardHeader>

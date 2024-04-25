@@ -3,6 +3,52 @@ export interface imageObject {
   url: string;
 }
 
+export const WritedailyImage: imageObject[] = [
+  {
+    id: "1",
+    url: "/writedaily/image1.png",
+  },
+  {
+    id: "2",
+    url: "/writedaily/image2.png",
+  },
+  {
+    id: "3",
+    url: "/writedaily/image3.png",
+  },
+
+  {
+    id: "4",
+    url: "/writedaily/image4.png",
+  },
+  {
+    id: "5",
+    url: "/writedaily/image5.png",
+  },
+  {
+    id: "6",
+    url: "/writedaily/image6.png",
+  },
+
+  {
+    id: "7",
+    url: "/writedaily/image7.png",
+  },
+
+  {
+    id: "8",
+    url: "/writedaily/image8.png",
+  },
+  {
+    id: "9",
+    url: "/writedaily/image9.png",
+  },
+  {
+    id: "10",
+    url: "/writedaily/image10.png",
+  },
+];
+
 export const ChitChatImage: imageObject[] = [
   {
     id: "1",
