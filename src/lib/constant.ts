@@ -1,9 +1,23 @@
-export interface imageObject {
-    id: string;
-    url: string;
-}
+import { ImageInfo, Project } from "@/types";
 
-export const WebDesysImage: imageObject[] = [
+const projects: Project[] = [
+    {
+        id: '1',
+        name: "WebDesys",
+        subheading: "A software company based in Noida which provide web development and digital marketing services.",
+        link: 'https://webdesys.com',
+        tags: ["sdf"],
+        description: [""],
+        images: [{
+            id: '2',
+            url: "/WebDesys/home.png"
+        }]
+
+    }
+]
+
+
+export const WebDesysImage: ImageInfo[] = [
     {
         id: "1",
         url: "/WebDesys/home.png",
@@ -46,7 +60,7 @@ export const WebDesysImage: imageObject[] = [
 ];
 
 
-export const WritedailyImage: imageObject[] = [
+export const WritedailyImage: ImageInfo[] = [
     {
         id: "1",
         url: "/writedaily/image1.png",
@@ -92,7 +106,7 @@ export const WritedailyImage: imageObject[] = [
     },
 ];
 
-export const ChitChatImage: imageObject[] = [
+export const ChitChatImage: ImageInfo[] = [
     {
         id: "1",
         url: "/chit/01.jpeg",
@@ -116,7 +130,7 @@ export const ChitChatImage: imageObject[] = [
     },
 ];
 
-export const DashboardImage: imageObject[] = [
+export const DashboardImage: ImageInfo[] = [
     {
         id: "1",
         url: "/dashboard/Screenshot2.png",
@@ -161,7 +175,7 @@ export const DashboardImage: imageObject[] = [
     },
 ];
 
-export const EcommerceImage: imageObject[] = [
+export const EcommerceImage: ImageInfo[] = [
     {
         id: "1",
         url: "/ecommerce/Screenshot.png",
@@ -206,7 +220,7 @@ export const EcommerceImage: imageObject[] = [
     },
 ];
 
-export const noteverseImage: imageObject[] = [
+export const noteverseImage: ImageInfo[] = [
     {
         id: "1",
         url: "/noteversepic/01.jpeg",

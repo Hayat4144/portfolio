@@ -14,7 +14,7 @@ import Slider from "../Slider";
 
 export default function WritedailyProject() {
     return (
-        <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5 my-10 text-justify">
+        <div className="project-1 grid grid-cols-1 lg:grid-cols-2 gap-5 my-10 text-justify">
             <Slider images={WritedailyImage} />
             <Card>
                 <CardHeader>

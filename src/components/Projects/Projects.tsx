@@ -1,5 +1,4 @@
 import React from "react";
-import { TypographyH3 } from "@/components/ui/heading";
 import {
     Card,
     CardContent,
@@ -28,7 +27,7 @@ export default function Projects() {
             <div className="projects my-10">
                 <WebDesysProject />
                 <WritedailyProject />
-                <div className="project-1 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="project-1 grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <Card>
                         <CardHeader>
                             <CardTitle>Noteverse</CardTitle>

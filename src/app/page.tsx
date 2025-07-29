@@ -24,7 +24,7 @@ export default function Home() {
              px-5 min-h-screen my-10"
             >
                 <TypographyH1 className="text-center text-5xl md:text-6xl font-extrabold">Backend-Focused Full Stack Developer</TypographyH1>
-                <p className="py-2 leading-7 text-center w-[45rem]">
+                <p className="py-2 px-3 md:leading-7 text-center md:w-[45rem]">
                     I architect and deliver robust web applications, specializing in building powerful server-side solutions and seamless APIs. My passion lies in solving
                     complex challenges and applying best practices in scalable backend development.</p>
 
