@@ -21,10 +21,10 @@ import WebDesysProject from "./WebDesys";
 export default function Projects() {
     return (
         <div
-            className="mx-5 min-h-screen md:w-[75%] md:mx-auto text-justify"
+            className="mx-5 my-5 min-h-screen md:w-[75%] md:mx-auto text-justify"
             id="projects"
         >
-            <TypographyH3>Some Things I've built</TypographyH3>
+            <h1 className="text-4xl font-bold my-5">Some Things I've built</h1>
             <div className="projects my-10">
                 <WebDesysProject />
                 <WritedailyProject />

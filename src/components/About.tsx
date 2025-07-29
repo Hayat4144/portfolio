@@ -1,54 +1,85 @@
 import React from "react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button, buttonVariants } from "@/components/ui/button";
-import Image from "next/image";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Card, CardContent } from "./ui/card";
+import { Code, Database, Server } from "lucide-react";
 
 export default function About() {
-  return (
-    <section
-      className="about mx-5 mb-10 md:grid md md:grid-cols-2
-         md:place-items-center md:mx-auto md:w-[75%]"
-      id="about"
-    >
-      <div className="w-full">
-        <AspectRatio ratio={16 / 13}>
-          <Image src="/images.png" alt="Photo" fill className="" />
-        </AspectRatio>
-      </div>
-      <div className="text-justify">
-        <p className="leading-7">
-          Hello! I'm Hayat ilyas, a tech enthusiast skilled in building cool
-          websites. I'm great at making things look awesome on the screen using
-          React.js and creating the brains of the website with Node.js and
-          Express.js.
-        </p>
-        <p className="leading-7 my-3">
-          I'm not just about the flashy stuff; I'm a problem solver too! When
-          things get tricky, I know how to find solutions fast. Plus, I'm really
-          good at talking with people. Clear communication is my thing. I make
-          sure everyone involved knows what's going on every step of the way.
-        </p>
-        <p className=" leading-7">
-          Whether it's making a website look amazing, giving it a smart brain,
-          or solving any hiccups along the way, I'm here to turn your ideas into
-          a fantastic online reality! Let's chat and make something awesome
-          together!
-        </p>
-        <div className="my-5 space-x-5">
-          <Link
-            href={"resume.pdf"}
-            target="_blank"
-            className={`${cn(buttonVariants({ variant: "default" }))}`}
-            rel="noopener noreferrer"
-            locale={false}
-            download
-          >
-            Download Resume
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section
+            className="about mx-5 my-5 md:w-[75%] md:mx-auto"
+            id="about"
+        >
+            <h1 className="my-5 md:my-10 text-4xl font-bold">About Me</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div className="text-justify">
+                    <p className="leading-7">
+                        Hello, I’m Hayat Ilyas—a backend-focused full stack developer with a strong
+                        foundation in modern web architecture. I have deep experience in designing RESTful APIs,
+                        optimizing databases, and building secure, scalable server-side applications using Node.js,
+                        Express.js, PostgreSQL, and MongoDB. </p>
+                    <p className="leading-7 my-3">
+                        Beyond code, I’m dedicated to clear communication and effective collaboration,
+                        ensuring all stakeholders remain aligned throughout a project’s lifecycle.
+                        My approach is solution-oriented: whether architecting core systems or troubleshooting tough issues,
+                        I thrive on delivering efficient results.
+                    </p>
+                    <p className="leading-7 my-3">
+                        Let’s create high-performance, reliable applications—together.
+                    </p>
+                    <div className="my-5 space-x-5">
+                        <Link
+                            href={"resume.pdf"}
+                            target="_blank"
+                            className={`${cn(buttonVariants({ variant: "default" }))}`}
+                            rel="noopener noreferrer"
+                            locale={false}
+                            download
+                        >
+                            Download Resume
+                        </Link>
+                    </div>
+                </div>
+                <div className="space-y-6">
+                    <Card className="border-l-4 border-l-blue-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <CardContent className="p-6">
+                            <div className="flex items-center mb-3">
+                                <Server className="h-6 w-6 text-blue-600 mr-3" />
+                                <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">Backend Architecture</h4>
+                            </div>
+                            <p className="text-slate-600 dark:text-slate-300">
+                                Designing scalable server-side solutions with Node.js, Express.js, and modern database technologies.
+                            </p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="border-l-4 border-l-purple-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <CardContent className="p-6">
+                            <div className="flex items-center mb-3">
+                                <Database className="h-6 w-6 text-purple-600 mr-3" />
+                                <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">Database Optimization</h4>
+                            </div>
+                            <p className="text-slate-600 dark:text-slate-300">
+                                Expert in PostgreSQL and MongoDB optimization, schema design, and performance tuning.
+                            </p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="border-l-4 border-l-green-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <CardContent className="p-6">
+                            <div className="flex items-center mb-3">
+                                <Code className="h-6 w-6 text-green-600 mr-3" />
+                                <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">Full Stack Development</h4>
+                            </div>
+                            <p className="text-slate-600 dark:text-slate-300">
+                                Building complete web applications with React, Next.js, and modern frontend technologies.
+                            </p>
+                        </CardContent>
+                    </Card>
+                </div>
+
+            </div>
+        </section>
+    );
 }
