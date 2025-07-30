@@ -38,7 +38,7 @@ export default function Home() {
                         target="_blank"
                         className={`${cn(buttonVariants({ variant: "outline" }))}`}
                         rel="noopener noreferrer"
-                        locale={false}
+                        locale={"false"}
                         download
                     >
                         Download Resume
